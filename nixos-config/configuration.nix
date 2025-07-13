@@ -65,7 +65,7 @@
     unzip
     zig
     clang
-    clang-tools
+    ccls
     cargo
     rustc
     vim

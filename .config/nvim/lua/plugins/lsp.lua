@@ -11,7 +11,7 @@ return {
       require("mason-lspconfig").setup({
         autoformat = false,
         ensure_installed = {
-          "clangd",
+          "ccls",
           "zls",
           "rust_analyzer",
         }
