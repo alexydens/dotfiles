@@ -62,7 +62,6 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
-    brave
     unzip
     zig
     clang
@@ -78,6 +77,8 @@
     acpi
     lshw
     brightnessctl
+    quickshell
+    brave
     alacritty
     bemenu
     hyprsunset
