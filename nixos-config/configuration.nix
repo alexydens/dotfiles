@@ -62,6 +62,7 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
+    brave
     unzip
     zig
     clang
