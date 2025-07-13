@@ -62,6 +62,10 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
+    zig
+    clang
+    cargo
+    rustc
     vim
     neovim
     git
