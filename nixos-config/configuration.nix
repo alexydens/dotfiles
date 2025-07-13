@@ -78,6 +78,8 @@
     lshw
     brightnessctl
     adw-gtk3
+    qt5ct
+    qt6ct
     quickshell
     brave
     alacritty
