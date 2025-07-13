@@ -77,6 +77,7 @@
     acpi
     lshw
     brightnessctl
+    adw-gtk3
     quickshell
     brave
     alacritty
