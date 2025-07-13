@@ -8,7 +8,7 @@ return {
         "c", "cpp", "cmake", "make",
         "lua", "vim", "vimdoc",
         "javascript", "html", "css",
-        "markdown", "mardown_inline",
+        "markdown",
         "glsl",
         "python",
         "rust",
