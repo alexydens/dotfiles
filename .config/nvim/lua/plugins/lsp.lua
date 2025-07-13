@@ -12,7 +12,6 @@ return {
         autoformat = false,
         ensure_installed = {
           "clangd",
-          "lua",
           "zls",
           "rust_analyzer",
         }

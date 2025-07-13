@@ -62,6 +62,7 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
+    unzip
     zig
     clang
     clang-tools
