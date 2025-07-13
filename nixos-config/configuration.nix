@@ -64,6 +64,7 @@
   environment.systemPackages = with pkgs; [
     zig
     clang
+    clang-tools
     cargo
     rustc
     vim
