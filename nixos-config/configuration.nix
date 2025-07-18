@@ -101,7 +101,7 @@
   programs.zsh.shellAliases = {
     rebuild-config = "sudo nixos-rebuild switch --flake ~/nixos-config";
     collect-garbage = "sudo nix-collect-garbage --delete-old";
-    status = "python ~/status.py tk"
+    status = "python ~/status.py tk";
   };
 
   # Fonts
