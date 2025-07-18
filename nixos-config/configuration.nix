@@ -63,7 +63,7 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
-    python3Full
+    python310Full
     unzip
     zig
     clang
