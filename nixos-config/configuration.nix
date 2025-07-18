@@ -32,6 +32,7 @@
   services.pipewire.enable = true;
   services.pipewire.alsa.enable = true;
   services.pipewire.pulse.enable = true;
+            os.system(f"notify-send {key.upper()}: {value}")
 
   # SSH
   services.openssh.enable = true;
@@ -62,8 +63,7 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
-    python3
-    jq
+    python3Full
     unzip
     zig
     clang
@@ -82,7 +82,6 @@
     adw-gtk3
     libsForQt5.qt5ct
     qt6ct
-    eww
     brave
     alacritty
     bemenu
