@@ -87,6 +87,7 @@
     hyprsunset
     hyprlock
     rose-pine-hyprcursor
+    prismlauncher
   ];
 
   # Zsh
@@ -113,6 +114,9 @@
   security.polkit.enable = true;
   programs.hyprland.enable = true;
   programs.hyprland.xwayland.enable = true;
+  
+  # Steam
+  programs.steam.enable = true;
 
   # DO NOT EDIT
   system.stateVersion = "25.05";
