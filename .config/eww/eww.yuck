@@ -1,22 +1,48 @@
+(defpoll activewindowpoll
+  :interval "10s"
+  :initial "NULL"
+  `hyprctl activewindow -j | jq .title`
+)
+(defwidget activewindow [] activewindowpoll)
+(defpoll activeworkspacepoll
+  :interval "10s"
+  :initial "NULL"
+  `echo "WORKSPACE: "$(hyprctl activeworkspace -j | jq .id)`
+)
+(defwidget activeworkspace [] activeworkspacepoll)
+(defpoll timepoll
+  :interval "30s"
+  :initial "NULL"
+  `date +"%d/%m/%y %H:%M"`
+)
+(defwidget time [] timepoll)
+(defpoll batterypoll
+  :interval "30s"
+  :initial "NULL"
+  `echo $(acpi -b | awk -F'[,%]' '{print $2}')"%"`
+)
+(defwidget battery [] batterypoll)
+
 (defwidget leftitems []
   (box
     :orientation "horizontal"
     :halign "start"
-    "abcdef"
+    (activeworkspace)
   )
 )
 (defwidget centeritems []
   (box
     :orientation "horizontal"
     :halign "center"
-    "abcdef"
+    (activewindow)
   )
 )
 (defwidget rightitems []
   (box
     :orientation "horizontal"
     :halign "end"
-    "abcdef"
+    (battery)
+    (time)
   )
 )
 
