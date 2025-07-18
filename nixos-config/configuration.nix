@@ -62,7 +62,7 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
-    python
+    python3
     jq
     unzip
     zig
