@@ -32,7 +32,6 @@
   services.pipewire.enable = true;
   services.pipewire.alsa.enable = true;
   services.pipewire.pulse.enable = true;
-            os.system(f"notify-send {key.upper()}: {value}")
 
   # SSH
   services.openssh.enable = true;
@@ -102,6 +101,7 @@
   programs.zsh.shellAliases = {
     rebuild-config = "sudo nixos-rebuild switch --flake ~/nixos-config";
     collect-garbage = "sudo nix-collect-garbage --delete-old";
+    status = "python ~/status.py tk"
   };
 
   # Fonts
