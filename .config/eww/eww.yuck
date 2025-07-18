@@ -1,0 +1,47 @@
+(defwidget leftitems []
+  (box
+    :orientation "horizontal"
+    :halign "start"
+    "abcdef"
+  )
+)
+(defwidget centeritems []
+  (box
+    :orientation "horizontal"
+    :halign "center"
+    "abcdef"
+  )
+)
+(defwidget rightitems []
+  (box
+    :orientation "horizontal"
+    :halign "end"
+    "abcdef"
+  )
+)
+
+(defwidget bar []
+  (box
+    :class "bar"
+    :orientation "horizontal"
+    (leftitems)
+    (centeritems)
+    (rightitems)
+  )
+)
+
+(defwindow bar
+  :monitor 0
+  :geometry (geometry
+    :x "0%"
+    :y "0%"
+    :width "100%"
+    :height "30px"
+    :anchor "bottom center"
+  )
+  :stacking "fg"
+  :windowtype "dock"
+  :wm-ignore false
+  :exclusive true
+  (bar)
+)

@@ -62,6 +62,7 @@
 
   # System packages
   environment.systemPackages = with pkgs; [
+    jq
     unzip
     zig
     clang
