@@ -55,7 +55,7 @@
   users.users.alexydens = {
     shell = pkgs.zsh;
     isNormalUser = true;
-    extraGroups = [ "wheel" ];
+    extraGroups = [ "wheel" "docker" ];
     packages = with pkgs; [
     ];
   };
@@ -104,6 +104,9 @@
     collect-garbage = "sudo nix-collect-garbage --delete-old";
     status = "python ~/status.py tk";
   };
+
+  # Docker
+  virtualisation.docker.enable = true;
 
   # Fonts
   fonts.packages = with pkgs; [
