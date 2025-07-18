@@ -80,7 +80,7 @@
     adw-gtk3
     libsForQt5.qt5ct
     qt6ct
-    quickshell
+    eww
     brave
     alacritty
     bemenu
