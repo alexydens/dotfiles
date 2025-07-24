@@ -1,0 +1,4 @@
+.config/blender
+.config/nvim/lazy-lock.json
+.config/BraveSoftware/*
+__pycache__
