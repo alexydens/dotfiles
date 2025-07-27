@@ -17,7 +17,7 @@
     unzip
     stow
 
-    make
+    gnumake
     zig
     clang
     cargo rustc
