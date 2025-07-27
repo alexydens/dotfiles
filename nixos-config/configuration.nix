@@ -17,6 +17,7 @@
     unzip
     stow
 
+    make
     zig
     clang
     cargo rustc
