@@ -1,6 +1,7 @@
 .config/htop
 .config/dconf
 .config/glib-2.0
+.config/pulse
 .config/blender
 .config/mimeapps.list
 .config/kritadisplayrc
