@@ -20,6 +20,7 @@
     gnumake
     zig
     clang
+    gmp
     cargo rustc
     python310Full
 
