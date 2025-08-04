@@ -35,6 +35,7 @@
     prismlauncher
     blender
     krita
+    anki
   ];
 
   # Flakes
