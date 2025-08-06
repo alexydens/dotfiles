@@ -18,9 +18,9 @@
     stow
 
     gnumake
+    cmake
     zig
     clang
-    gmp
     cargo rustc
     python310Full
 
