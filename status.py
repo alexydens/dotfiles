@@ -16,7 +16,7 @@ if __name__=="__main__":
     res["time"] = time[:-1]
     # BATTERY
     percentage = get_output(["acpi", "-b"]).split(", ")[1]
-    res["battery"] = percentage[:-1]
+    res["battery"] = percentage[:-1]+"%"
     # VOLUME
     value = float(get_output([
         "wpctl", "get-volume", "@DEFAULT_SINK@"
