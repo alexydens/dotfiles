@@ -17,6 +17,8 @@ if __name__=="__main__":
     # BATTERY
     percentage = get_output(["acpi", "-b"]).split(", ")[1]
     res["battery"] = percentage[:-1]+"%"
+    if "Charging" in get_output(["acpi", "-b"]): # i cba to write this well
+        res["battery"] += " (charging)"
     # VOLUME
     value = float(get_output([
         "wpctl", "get-volume", "@DEFAULT_SINK@"
