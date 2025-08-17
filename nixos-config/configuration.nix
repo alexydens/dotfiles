@@ -37,6 +37,8 @@
     blender
     krita
     anki
+
+    quickemu
   ];
 
   # Flakes
