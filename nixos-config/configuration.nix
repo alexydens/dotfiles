@@ -121,10 +121,6 @@
   # Flatpak
   services.flatpak.enable = true;
 
-  # VirtualBox
-  virtualisation.virtualbox.host.enable = true;
-  users.extraGroups.vboxusers.members = [ "alexydens" ];
-
   # DON'T EDIT
   system.stateVersion = "25.05";
 }
