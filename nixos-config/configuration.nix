@@ -40,7 +40,7 @@
 
     libreoffice-still
     hunspell
-    hunspellDicts.en_GB
+    hunspellDicts.en_GB-large
   ];
 
   # Flakes
