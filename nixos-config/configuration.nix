@@ -37,10 +37,6 @@
     blender
     krita
     anki
-
-    libreoffice-still
-    hunspell
-    hunspellDicts.en_GB-large
   ];
 
   # Flakes
