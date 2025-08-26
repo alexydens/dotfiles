@@ -106,7 +106,8 @@
   programs.zsh.ohMyZsh.theme = "eastwood";
   programs.zsh.shellAliases = {
     rebuild-config = "sudo nixos-rebuild switch --flake ~/nixos-config";
-    collect-garbage = "sudo nix-collect-garbage --delete-old";
+    #collect-garbage = "sudo nix-collect-garbage --delete-old";
+    collect-garbage = "sudo nix-collect-garbage -d";
     status = "python ~/status.py tk";
   };
 
