@@ -35,6 +35,7 @@
     brave
     prismlauncher
     blender
+    schismtracker
     krita
     anki
   ];
