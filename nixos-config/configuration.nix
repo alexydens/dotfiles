@@ -38,6 +38,7 @@
     blender
     schismtracker
     krita
+    aseprite
     anki
   ];
 
