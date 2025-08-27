@@ -8,4 +8,5 @@
 .config/StardewValley
 .config/nvim/lazy-lock.json
 .config/BraveSoftware/*
+.config/aseprite
 __pycache__

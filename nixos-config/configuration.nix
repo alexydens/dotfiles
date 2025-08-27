@@ -32,6 +32,7 @@
     rose-pine-hyprcursor
     bemenu
     alacritty
+    imv
     brave
     prismlauncher
     blender
