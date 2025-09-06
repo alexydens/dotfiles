@@ -55,7 +55,7 @@
   # Networking
   networking.hostName = "lenovo-nixos";
   networking.networkmanager.enable = true;
-  services.openssh.enable = true;
+  # services.openssh.enable = true;
 
   # Internationalisation
   time.timeZone = "Europe/London";
