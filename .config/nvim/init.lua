@@ -1,12 +1,40 @@
 -- packages
--- vim.pack.add({
--- })
+vim.pack.add({
+  { src = "https://github.com/vague2k/vague.nvim" },
+  { src = "https://github.com/sainnhe/everforest" },
+  { src = "https://github.com/ellisonleao/gruvbox.nvim" },
+  { src = "https://github.com/nvim-lualine/lualine.nvim" },
+  { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
+  { src = "https://github.com/neovim/nvim-lspconfig" },
+  { src = "https://github.com/mason-org/mason.nvim" },
+})
+
+-- configs for packages
+require("lualine").setup({})
+require("nvim-treesitter.configs").setup({
+  highlight = { enable = true },
+  indent = { enable = true },
+  ensure_installed = {
+    "c", "cpp", "cmake", "make",
+    "lua", "vim", "vimdoc",
+    "javascript", "html", "css",
+    "markdown",
+    "glsl",
+    "python",
+    "rust",
+    "zig"
+  }
+})
+require("mason").setup({})
+
+-- language servers
+vim.lsp.enable("lua_ls")
 
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
 
 -- colour/theme stuff
-vim.cmd("colorscheme industry")
+vim.cmd("colorscheme vague")
 vim.cmd("syntax on")
 vim.opt.bg = "dark"
 vim.opt.hlsearch = true
