@@ -6,7 +6,6 @@ vim.pack.add({
   { src = "https://github.com/nvim-lualine/lualine.nvim" },
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
   { src = "https://github.com/neovim/nvim-lspconfig" },
-  { src = "https://github.com/mason-org/mason.nvim" },
   { src = "https://github.com/lewis6991/gitsigns.nvim" },
 })
 
@@ -30,7 +29,6 @@ require("nvim-treesitter.configs").setup({
   ignore_install = { },
   modules = { }
 })
-require("mason").setup({})
 require("gitsigns").setup({
   signs = {
     add = { text = "+" },
@@ -41,6 +39,7 @@ require("gitsigns").setup({
 })
 
 -- language servers
+vim.lsp.enable({ "clangd" })
 vim.lsp.enable({ "lua_ls" })
 vim.lsp.config("lua_ls", {
   settings = {
