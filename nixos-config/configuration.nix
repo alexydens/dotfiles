@@ -36,6 +36,7 @@
     alacritty
     imv
     brave
+    qutebrowser
     prismlauncher
     blender
     schismtracker
