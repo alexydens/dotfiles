@@ -17,10 +17,12 @@
     unzip
     stow
 
+    lua-language-server
+
     gnumake
     cmake
     zig
-    clang
+    libclang clang
     cargo rustc
     python314
 
