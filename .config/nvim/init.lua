@@ -24,7 +24,11 @@ require("nvim-treesitter.configs").setup({
     "python",
     "rust",
     "zig"
-  }
+  },
+  sync_install = false,
+  auto_install = true,
+  ignore_install = { },
+  modules = { }
 })
 require("mason").setup({})
 require("gitsigns").setup({
@@ -37,14 +41,16 @@ require("gitsigns").setup({
 })
 
 -- language servers
-vim.lsp.enable("lua_ls")
-
--- lsp
--- vim.api.nvim_create_autocmd('LspAttach', {
-  -- callback = function(args)
-    -- local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
-  -- end,
--- })
+vim.lsp.enable({ "lua_ls" })
+vim.lsp.config("lua_ls", {
+  settings = {
+    Lua = {
+      workspace = {
+        library = vim.api.nvim_get_runtime_file("", true)
+      }
+    }
+  }
+})
 
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
@@ -55,7 +61,7 @@ vim.cmd("syntax on")
 vim.opt.bg = "dark"
 vim.opt.hlsearch = true
 vim.opt.colorcolumn = "80"
--- vim.opt.winborder = "bold"
+vim.opt.winborder = "bold"
 
 -- line numbers
 vim.opt.number = true
@@ -70,6 +76,7 @@ vim.opt.expandtab = true
 vim.opt.tabstop = 2
 vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
+vim.opt.smartindent = true
 
 -- clear search buffer
 -- vim.api.nvim_create_user_command(
