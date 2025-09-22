@@ -7,6 +7,7 @@ vim.pack.add({
   { src = "https://github.com/nvim-treesitter/nvim-treesitter" },
   { src = "https://github.com/neovim/nvim-lspconfig" },
   { src = "https://github.com/mason-org/mason.nvim" },
+  { src = "https://github.com/lewis6991/gitsigns.nvim" },
 })
 
 -- configs for packages
@@ -26,9 +27,24 @@ require("nvim-treesitter.configs").setup({
   }
 })
 require("mason").setup({})
+require("gitsigns").setup({
+  signs = {
+    add = { text = "+" },
+    change = { text = "~" },
+    delete = { text = "-" },
+  },
+  signs_staged_enable = false,
+})
 
 -- language servers
 vim.lsp.enable("lua_ls")
+
+-- lsp
+-- vim.api.nvim_create_autocmd('LspAttach', {
+  -- callback = function(args)
+    -- local client = assert(vim.lsp.get_client_by_id(args.data.client_id))
+  -- end,
+-- })
 
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
