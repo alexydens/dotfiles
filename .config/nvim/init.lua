@@ -51,6 +51,9 @@ vim.lsp.config("lua_ls", {
   }
 })
 
+-- diagnositcs
+vim.diagnostic.config({ virtual_text = true })
+
 -- clipboard
 vim.opt.clipboard = "unnamedplus"
 
