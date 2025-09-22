@@ -6,7 +6,7 @@
 .config/mimeapps.list
 .config/kritadisplayrc
 .config/StardewValley
-.config/nvim/lazy-lock.json
 .config/BraveSoftware/*
 .config/aseprite
+.config/qutebrowser
 __pycache__
